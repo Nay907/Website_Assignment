@@ -1,0 +1,110 @@
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #333; 
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5f8; 
+    color: rgb(21, 20, 26); 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid rgb(238, 234, 234); 
+    box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+}
+    
+th, td {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+thead {
+    background: #0a0878; 
+    color: white;
+}
+
+button {
+    font-size: 14px;
+    text-align: center;
+    background-color: #12202b; 
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+button:hover {
+    background-color: #c35534; 
+}
+
+button#addRecord {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    text-align: center;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #333; 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+.actions button {
+    flex: 1;
+    margin: 0 5px;
+}
